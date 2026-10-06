@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  /* Yelden brand palette: navy, gold, cream */
+  --color-brand-navy: #16264a;
+  --color-brand-navy-dark: #0e1a35;
+  --color-brand-gold: #b8945a;
+  --color-brand-gold-light: #d9c29a;
+  --color-brand-cream: #f7f2ea;
+  --color-brand-beige: #efe6d8;
+  --color-brand-charcoal: #16264a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Infinite horizontal logo band */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 80s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee {
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-duration: 120s;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}

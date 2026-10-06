@@ -1,0 +1,404 @@
+export const company = {
+    name: 'Yelden Fabrics',
+    legalName: 'YELDEN TEKSTİL SAN. ve TİC. LTD. ŞTİ.',
+    address: 'Mehmet Nesih Özmen, Mehmet Akif Cad. No: 30, 34173 Güngören/İstanbul',
+    phoneDisplay: '0532 673 57 72',
+    phoneHref: 'tel:+905326735772',
+    whatsapp: '905326735772',
+    instagram: 'yeldentextile_official',
+    instagramUrl: 'https://www.instagram.com/yeldentextile_official/',
+    rating: '5,0',
+    reviewCount: 5,
+    mapsQuery: 'YELDEN TEKSTİL SAN. ve TİC. LTD. ŞTİ., Mehmet Akif Cad. No: 30, Güngören, İstanbul',
+};
+
+// Product collections, taken from the specs printed on Yelden's own Instagram posts.
+export const routes = {
+    home: '/',
+    collections: '/koleksiyonlar',
+    about: '/hakkimizda',
+    contact: '/iletisim',
+};
+
+// Reference brands shown in the scrolling logo band. `h` balances each logo's visual weight (px).
+export const references = [
+    { id: 'inditex', name: 'Inditex', h: 22 },
+    { id: 'hm', name: 'H&M', h: 40 },
+    { id: 'zara', name: 'Zara', h: 34 },
+    { id: 'cunda', name: 'C&A', h: 46 },
+    { id: 'mango', name: 'Mango', h: 22 },
+    { id: 'tomtailor', name: 'Tom Tailor', h: 42 },
+    { id: 'pullandbear', name: 'Pull&Bear', h: 20 },
+    { id: 'esprit', name: 'Esprit', h: 22 },
+    { id: 'bershka', name: 'Bershka', h: 22 },
+    { id: 'next', name: 'Next', h: 26 },
+    { id: 'marksandspencer', name: 'Marks & Spencer', h: 40 },
+    { id: 'stradivarius', name: 'Stradivarius', h: 34 },
+    { id: 'karstadt', name: 'Karstadt', h: 32 },
+    { id: 'oysho', name: 'Oysho', h: 26 },
+    { id: 'miroglio', name: 'Miroglio Group', h: 28 },
+    { id: 'massimodutti', name: 'Massimo Dutti', h: 30 },
+    { id: 'bonita', name: 'Bonita', h: 22 },
+    { id: 'qvc', name: 'QVC', h: 34 },
+    { id: 'cecil', name: 'Cecil', h: 24 },
+    { id: 'bgstore', name: 'B&G Store', h: 50 },
+    { id: 'ullapopken', name: 'Ulla Popken', h: 36 },
+    { id: 'frenchconnection', name: 'French Connection', h: 14 },
+    { id: 'ginalaura', name: 'Gina Laura', h: 18 },
+    { id: 'dkcompany', name: 'DK Company', h: 36 },
+];
+
+// Certifications and licensed fibres shown on the storefront sign. Items with `logo` use an image,
+// the rest are drawn as text badges because no public logo file is available.
+export const certifications = [
+    { id: 'gots', name: 'Global Organic Textile Standard', logo: 'gots.svg', caption: 'GOTS' },
+    { id: 'ocs100', code: 'OCS 100', name: 'Organic Content Standard', tone: 'organic' },
+    { id: 'ocsblended', code: 'OCS Blended', name: 'Organic Content Standard', tone: 'organic' },
+    { id: 'rcs100', code: 'RCS 100', name: 'Recycled Claim Standard', tone: 'recycled' },
+    { id: 'rcsblended', code: 'RCS Blended', name: 'Recycled Claim Standard', tone: 'recycled' },
+    { id: 'grs', code: 'GRS', name: 'Global Recycled Standard', tone: 'recycled' },
+    { id: 'bci', name: 'Better Cotton Initiative', logo: 'bci.svg' },
+    { id: 'oekotex', name: 'OEKO-TEX Standard 100', logo: 'oekotex.svg', caption: 'Standard 100' },
+    { id: 'cmia', name: 'Cotton made in Africa', logo: 'cmia.png', caption: 'Cotton made in Africa' },
+];
+
+export const licensedFibres = [
+    { id: 'lenzing', code: 'Lenzing', name: 'Innovative by nature', tone: 'lenzing' },
+    { id: 'tencel', code: 'Tencel™', name: 'Lyocell & Modal', tone: 'lenzing' },
+    { id: 'modal', code: 'Lenzing™ Modal', name: 'Modal', tone: 'lenzing' },
+    { id: 'ecovero', name: 'Lenzing EcoVero', logo: 'ecovero.svg' },
+];
+
+export const collections = [
+    {
+        id: 'gabardine',
+        group: 'cotton',
+        tr: {
+            name: 'Pamuklu Gabardin & Kanvas',
+            description: 'Stoklu, %100 pamuk gabardin ve kanvas kaliteler. Dayanıklı, uzun ömürlü ve geniş renk kartelalı.',
+            specs: ['%100 Pamuk', '150 cm', 'Hazır stok'],
+        },
+        en: {
+            name: 'Cotton Gabardine & Canvas',
+            description: 'In-stock 100% cotton gabardine and canvas qualities. Durable, long-lasting and available in a wide colour range.',
+            specs: ['100% Cotton', '150 cm', 'In stock'],
+        },
+    },
+    {
+        id: 'print',
+        group: 'cotton',
+        tr: {
+            name: 'Dijital Baskılı Kanvas',
+            description: 'Canlı renklerde dijital baskılı %100 pamuk kanvas. Pantolonluk ve gömleklik için uygun.',
+            specs: ['%100 Pamuk', '150 cm', '200 gr/m²'],
+        },
+        en: {
+            name: 'Digital Print Canvas',
+            description: '100% cotton canvas with vibrant digital prints. Suitable for trousers and shirts.',
+            specs: ['100% Cotton', '150 cm', '200 g/m²'],
+        },
+    },
+    {
+        id: 'oxford',
+        group: 'cotton',
+        tr: {
+            name: 'Oxford Plus Gömleklik',
+            description: '32 renk seçeneğiyle klasik oxford dokulu gömleklik kumaş.',
+            specs: ['%70 Pamuk %30 Polyester', '150 cm', '145 gr/m²'],
+        },
+        en: {
+            name: 'Oxford Plus Shirting',
+            description: 'Classic oxford-weave shirting fabric in 32 colours.',
+            specs: ['70% Cotton 30% Polyester', '150 cm', '145 g/m²'],
+        },
+    },
+    {
+        id: 'plaid',
+        group: 'blend',
+        tr: {
+            name: 'Ekose Kumaşlar',
+            description: 'Klasik ve canlı tonlarda ekose desenler.',
+            specs: ['%50 Viskon %50 Polyester', '150 cm', '170 gr/m²'],
+        },
+        en: {
+            name: 'Plaid Fabrics',
+            description: 'Plaid patterns in classic and vivid tones.',
+            specs: ['50% Viscose 50% Polyester', '150 cm', '170 g/m²'],
+        },
+    },
+    {
+        id: 'satin',
+        group: 'blend',
+        tr: {
+            name: 'Rayon & Viskon Saten',
+            description: 'Yumuşak dokulu, şık görünümlü ve geniş renk seçenekli yeni saten kaliteler.',
+            specs: ['Rayon & Viskon', '145–150 cm', '155 gr/m²'],
+        },
+        en: {
+            name: 'Rayon & Viscose Satin',
+            description: 'New satin qualities with a soft touch, a modern look and a wide colour range.',
+            specs: ['Rayon & Viscose', '145–150 cm', '155 g/m²'],
+        },
+    },
+    {
+        id: 'lyocell',
+        group: 'blend',
+        tr: {
+            name: 'Lyocell Viskon Karışım',
+            description: 'Doğal yumuşaklık, hafiflik ve zarafeti bir araya getiren, nefes alabilen karışım.',
+            specs: ['Lyocell – Viskon', '150 cm', '120 gr/m²'],
+        },
+        en: {
+            name: 'Lyocell Viscose Blend',
+            description: 'A breathable blend that brings together natural softness, lightness and elegance.',
+            specs: ['Lyocell – Viscose', '150 cm', '120 g/m²'],
+        },
+    },
+    {
+        id: 'silky',
+        group: 'blend',
+        tr: {
+            name: 'Silky Touche Koleksiyonu',
+            description: 'İpeksi tuşeli, yumuşak dokulu, hafif ve dökümlü rayon-pamuk kaliteler. Nefes alabilir ve cilt dostu. YLD23-2872 ve YLD22-0549 kaliteleri.',
+            specs: ['%52 Rayon %48 Pamuk · %54 Rayon %46 Pamuk', '145 cm', '60–70 gr/m²'],
+        },
+        en: {
+            name: 'Silky Touche Collection',
+            description: 'Rayon-cotton qualities with a silky hand feel, soft texture, light weight and fluid drape. Breathable and skin-friendly. Qualities YLD23-2872 and YLD22-0549.',
+            specs: ['52% Rayon 48% Cotton · 54% Rayon 46% Cotton', '145 cm', '60–70 g/m²'],
+        },
+    },
+    {
+        id: 'blended',
+        group: 'blend',
+        tr: {
+            name: 'Özel Karışımlı Kaliteler',
+            description: 'Seçkin elyaflar, kendine özgü dokular ve çok yönlü kalite seçenekleri.',
+            specs: ['Çizgili', 'Kareli', 'Düz renk'],
+        },
+        en: {
+            name: 'Special Blended Qualities',
+            description: 'A refined harmony of selected fibres, distinctive textures and versatile quality options.',
+            specs: ['Stripes', 'Checks', 'Solids'],
+        },
+    },
+    {
+        id: 'softshell',
+        group: 'technical',
+        tr: {
+            name: 'Softshell',
+            description: 'Dayanıklı, esnek ve konforlu. Outdoor ve günlük koleksiyonlar için ideal.',
+            specs: ['Rüzgar geçirmez', 'Su itici', 'Nefes alabilen'],
+        },
+        en: {
+            name: 'Softshell',
+            description: 'Durable, stretchy and comfortable. Ideal for outdoor and everyday collections.',
+            specs: ['Windproof', 'Water repellent', 'Breathable'],
+        },
+    },
+    {
+        id: 'waterrepellent',
+        group: 'technical',
+        tr: {
+            name: 'Su İtici Kumaş',
+            description: 'Yağmur ve sıvılara karşı ekstra koruma sağlayan, leke tutmayan, kolay temizlenen, hafif ve nefes alan kumaş. 15 renk seçeneğiyle stoklarımızda.',
+            specs: ['%100 Poliamid', '150 cm', '90 gr/m²'],
+        },
+        en: {
+            name: 'Water-Repellent Fabric',
+            description: 'A light, breathable fabric with extra protection against rain and liquids. Stain resistant and easy to clean. In stock in 15 colours.',
+            specs: ['100% Polyamide', '150 cm', '90 g/m²'],
+        },
+    },
+    {
+        id: 'marine',
+        group: 'technical',
+        tr: {
+            name: 'Marine Koleksiyonu',
+            description: 'Denizden ilham alan, dayanıklı ve kolay bakımlı kumaşlar.',
+            specs: ['Su itici', 'UV dayanımlı', 'Yüksek renk haslığı'],
+        },
+        en: {
+            name: 'Marine Collection',
+            description: 'Sea-inspired fabrics that are durable and easy to care for.',
+            specs: ['Water repellent', 'UV resistant', 'Colourfast'],
+        },
+    },
+];
+
+export const translations = {
+    tr: {
+        meta: { title: 'Yelden Fabrics | İstanbul Kumaş Toptancısı' },
+        nav: { home: 'Ana Sayfa', collections: 'Koleksiyonlar', about: 'Hakkımızda', contact: 'İletişim' },
+        hero: {
+            eyebrow: 'İstanbul · Toptan Kumaş Tedarikçisi',
+            titleStart: 'Her İplikte',
+            titleAccent: 'Kalite',
+            subtitle: "Pamuklu gabardinden satene, ekoseden softshell'e geniş kumaş yelpazesi. Hazır stok, hızlı tedarik ve güvenilir hizmet.",
+            cta: 'Koleksiyonları Keşfet',
+            call: 'Bizi Arayın',
+            reviews: (n) => `Google'da ${n} yorum`,
+            collectionsLabel: 'koleksiyon',
+            showroomAlt: 'Yelden Fabrics showroom',
+        },
+        features: [
+            { title: 'Geniş Ürün Yelpazesi', text: 'Pamukludan teknik kumaşa' },
+            { title: 'Hazır Stok', text: 'Stoklu kaliteler' },
+            { title: 'Hızlı Teslimat', text: 'Zamanında tedarik' },
+            { title: 'Toptan Satış', text: 'Güvenilir tedarik' },
+        ],
+        about: {
+            eyebrow: 'Hakkımızda',
+            title: 'Kumaş tutkumuz, kalite sözümüz',
+            body: [
+                'Yelden Fabric, moda ve tekstil sektörüne yönelik geniş bir yelpazede kaliteli kumaşların tedariki, temini ve dağıtımında uzmanlaşmış bir Türk tekstil firmasıdır.',
+                'Geniş kumaş portföyümüz, güçlü tedarikçi ağımız ve pazar deneyimimizle hazır giyim, gömleklik, pantolonluk, dış giyim, elbise, çanta, aksesuar ve teknik tekstil uygulamaları için çözümler sunuyoruz.',
+                'Koleksiyonumuzda pamuklu, viskon, lyocell, polyester, keten, krep, şifon, örme kumaşlar, denim, gabardin, kanvas, süet ve çeşitli özel kumaşlar yer alıyor. Hem stok kumaşlar hem de seçili ithal kaliteler sunarak müşterilerimizin değişen ihtiyaçlarına hızla yanıt veriyoruz.',
+                'Yelden Fabric olarak kaliteye, güvenilirliğe, rekabetçi fiyatlara ve uzun vadeli iş birliklerine odaklanıyoruz.',
+            ],
+            usesTitle: 'Kullanım Alanları',
+            uses: ['Hazır giyim', 'Gömleklik', 'Pantolonluk', 'Dış giyim', 'Elbise', 'Çanta', 'Aksesuar', 'Teknik tekstil'],
+            fabricsTitle: 'Kumaş Çeşitleri',
+            fabrics: ['Pamuklu', 'Viskon', 'Lyocell', 'Polyester', 'Keten', 'Krep', 'Şifon', 'Örme', 'Denim', 'Gabardin', 'Kanvas', 'Süet', 'Özel kumaşlar'],
+            rating: 'Google puanı',
+            reviews: (n) => `${n} yorum`,
+            follow: 'Instagram’da takip edin',
+            imageAlt: 'Yelden Fabrics numune kataloğu',
+        },
+        collections: {
+            eyebrow: 'Ürünlerimiz',
+            title: 'Koleksiyonlar',
+            subtitle: 'Kaliteye göre filtreleyin, ayrıntılar için bir koleksiyona tıklayın.',
+            groups: { all: 'Tümü', cotton: 'Pamuklu', blend: 'Viskon & Karışım', technical: 'Teknik & Outdoor' },
+            details: 'İncele',
+            specs: 'Özellikler',
+            cta: 'Fiyat ve numune için arayın',
+            close: 'Kapat',
+            whatsappAbout: (name) => `Merhaba, ${name} koleksiyonu hakkında bilgi almak istiyorum.`,
+        },
+        footer: {
+            contact: 'İletişim',
+            title: 'Showroom’umuza bekleriz',
+            country: 'Türkiye',
+            directions: 'Yol Tarifi Al',
+            call: 'Hemen Ara',
+            mapTitle: 'Yelden Fabrics Konumu',
+            rights: 'Tüm hakları saklıdır.',
+        },
+        whatsapp: {
+            label: 'WhatsApp ile yazın',
+            short: 'WhatsApp',
+            message: 'Merhaba, kumaşlarınız hakkında bilgi almak istiyorum.',
+        },
+        home: {
+            featuredTitle: 'Öne Çıkan Koleksiyonlar',
+            featuredSubtitle: 'Geniş ürün yelpazemizden bir seçki.',
+            allCollections: 'Tüm Koleksiyonlar',
+            aboutMore: 'Bizi Tanıyın',
+            ctaTitle: 'Numune ve fiyat bilgisi için bize ulaşın',
+            ctaText: 'WhatsApp’tan yazın ya da hemen arayın.',
+        },
+        aboutPage: {
+            title: 'Yelden Fabrics',
+            subtitle: 'İstanbul Güngören’de kumaş toptancılığı.',
+        },
+        references: {
+            eyebrow: 'Referanslarımız',
+            title: 'Birlikte çalıştığımız markalar',
+        },
+        siteFooter: {
+            pages: 'Sayfalar',
+            contact: 'İletişim',
+            follow: 'Takip Edin',
+            certifications: 'Sertifikalar',
+            fibres: 'Lisanslı Lifler',
+        },
+    },
+    en: {
+        meta: { title: 'Yelden Fabrics | Fabric Wholesaler in Istanbul' },
+        nav: { home: 'Home', collections: 'Collections', about: 'About', contact: 'Contact' },
+        hero: {
+            eyebrow: 'Istanbul · Wholesale Fabric Supplier',
+            titleStart: 'Quality in Every',
+            titleAccent: 'Thread',
+            subtitle: 'A wide range of fabrics, from cotton gabardine to satin, plaid to softshell. Ready stock, fast supply and reliable service.',
+            cta: 'Explore Collections',
+            call: 'Call Us',
+            reviews: (n) => `${n} reviews on Google`,
+            collectionsLabel: 'collections',
+            showroomAlt: 'Yelden Fabrics showroom',
+        },
+        features: [
+            { title: 'Wide Range', text: 'From cotton to technical fabrics' },
+            { title: 'Ready Stock', text: 'In-stock qualities' },
+            { title: 'Fast Delivery', text: 'On-time supply' },
+            { title: 'Wholesale', text: 'Reliable supply' },
+        ],
+        about: {
+            eyebrow: 'About Us',
+            title: 'Fabric is our passion, quality is our promise',
+            body: [
+                'Yelden Fabric is a Turkish textile company specializing in the sourcing, supply, and distribution of a wide range of quality fabrics for the fashion and textile industry.',
+                'With our extensive fabric portfolio, strong supplier network, and market experience, we provide solutions for apparel, shirting, trousers, outerwear, dresses, bags, accessories, and technical textile applications.',
+                'Our collection includes cotton, viscose, lyocell, polyester, linen, crepe, chiffon, knitted fabrics, denim, gabardine, canvas, suede and various specialty fabrics. We offer both stock fabrics and selected imported qualities, responding quickly to the changing needs of our customers.',
+                'At Yelden Fabric, we focus on quality, reliability, competitive pricing and long-term partnerships.',
+            ],
+            usesTitle: 'Applications',
+            uses: ['Apparel', 'Shirting', 'Trousers', 'Outerwear', 'Dresses', 'Bags', 'Accessories', 'Technical textiles'],
+            fabricsTitle: 'Fabric Types',
+            fabrics: ['Cotton', 'Viscose', 'Lyocell', 'Polyester', 'Linen', 'Crepe', 'Chiffon', 'Knitted', 'Denim', 'Gabardine', 'Canvas', 'Suede', 'Specialty fabrics'],
+            rating: 'Google rating',
+            reviews: (n) => `${n} reviews`,
+            follow: 'Follow us on Instagram',
+            imageAlt: 'Yelden Fabrics swatch book',
+        },
+        collections: {
+            eyebrow: 'Our Products',
+            title: 'Collections',
+            subtitle: 'Filter by quality and click a collection for details.',
+            groups: { all: 'All', cotton: 'Cotton', blend: 'Viscose & Blends', technical: 'Technical & Outdoor' },
+            details: 'View',
+            specs: 'Specifications',
+            cta: 'Call for prices and samples',
+            close: 'Close',
+            whatsappAbout: (name) => `Hello, I would like to get information about the ${name} collection.`,
+        },
+        footer: {
+            contact: 'Contact',
+            title: 'Visit our showroom',
+            country: 'Turkey',
+            directions: 'Get Directions',
+            call: 'Call Now',
+            mapTitle: 'Yelden Fabrics Location',
+            rights: 'All rights reserved.',
+        },
+        whatsapp: {
+            label: 'Message us on WhatsApp',
+            short: 'WhatsApp',
+            message: 'Hello, I would like to get information about your fabrics.',
+        },
+        home: {
+            featuredTitle: 'Featured Collections',
+            featuredSubtitle: 'A selection from our wide product range.',
+            allCollections: 'All Collections',
+            aboutMore: 'Get to Know Us',
+            ctaTitle: 'Contact us for samples and prices',
+            ctaText: 'Message us on WhatsApp or give us a call.',
+        },
+        aboutPage: {
+            title: 'Yelden Fabrics',
+            subtitle: 'Fabric wholesale from Güngören, Istanbul.',
+        },
+        references: {
+            eyebrow: 'Our References',
+            title: 'Brands we work with',
+        },
+        siteFooter: {
+            pages: 'Pages',
+            contact: 'Contact',
+            follow: 'Follow Us',
+            certifications: 'Certifications',
+            fibres: 'Licensed Fibres',
+        },
+    },
+};
