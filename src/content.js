@@ -279,6 +279,7 @@ export const translations = {
         footer: {
             contact: 'İletişim',
             title: 'Showroom’umuza bekleriz',
+            developer: 'Geliştirici',
             country: 'Türkiye',
             directions: 'Yol Tarifi Al',
             call: 'Hemen Ara',
@@ -366,6 +367,7 @@ export const translations = {
         footer: {
             contact: 'Contact',
             title: 'Visit our showroom',
+            developer: 'Developer',
             country: 'Turkey',
             directions: 'Get Directions',
             call: 'Call Now',

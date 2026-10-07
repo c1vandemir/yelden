@@ -59,6 +59,10 @@ export default function SiteFooter() {
 
                 <div className="mt-12 pt-6 border-t border-white/10 text-center text-white/40 text-sm">
                     <p>&copy; {new Date().getFullYear()} {company.name}. {t.footer.rights}</p>
+                    <p className="mt-2 text-xs">
+                        {t.footer.developer}:{' '}
+                        <a href="https://civandemir.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-brand-gold transition-colors">Cıvan Demir</a>
+                    </p>
                 </div>
             </div>
         </footer>
