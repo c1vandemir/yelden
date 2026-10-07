@@ -232,7 +232,7 @@ export const translations = {
         nav: { home: 'Ana Sayfa', collections: 'Koleksiyonlar', about: 'Hakkımızda', contact: 'İletişim' },
         hero: {
             eyebrow: 'İstanbul · Toptan Kumaş Tedarikçisi',
-            titleStart: 'Her İplikte',
+            titleStart: 'Her Kumaşta',
             titleAccent: 'Kalite',
             subtitle: "Pamuklu gabardinden satene, ekoseden softshell'e geniş kumaş yelpazesi. Hazır stok, hızlı tedarik ve güvenilir hizmet.",
             cta: 'Koleksiyonları Keşfet',
@@ -320,7 +320,7 @@ export const translations = {
         hero: {
             eyebrow: 'Istanbul · Wholesale Fabric Supplier',
             titleStart: 'Quality in Every',
-            titleAccent: 'Thread',
+            titleAccent: 'Fabric',
             subtitle: 'A wide range of fabrics, from cotton gabardine to satin, plaid to softshell. Ready stock, fast supply and reliable service.',
             cta: 'Explore Collections',
             call: 'Call Us',
